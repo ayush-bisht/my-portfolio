@@ -3,7 +3,8 @@ import React from "react";
 export default function Home() {
     return (
         <main>
-            <img alt="No image added"
+            <img src = ""
+            alt="Im ayush"
             className="absoute object-cover w-full h-full"
             />
             <section className="relative flex justify-center min-h-screen pt-12 lg:pt-64 px-8">

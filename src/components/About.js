@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from "react";
 import sanityClient from "../client.js";
-import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
 import {urlFor} from "./SinglePost.js";
 
@@ -20,7 +19,7 @@ export default function About() {
 
     return (
         <main className="relative">
-            <img alt="no image" className="absolute w-full"/>
+            <img alt="background here" className="absolute w-full"/>
             <div className="p-10 lg:pt-48 container mx-auto relative">
                 <section className="bg-green-800 rounded-lg shadow-2xl lg:flex p-20">
                     <img src={urlFor(author.authorImage).url()}
