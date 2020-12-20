@@ -5,7 +5,7 @@ import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
 
 const builder =  imageUrlBuilder(sanityClient);
-function urlFor(source) {
+export function urlFor(source) {
     return builder.image(source);
 }
 export default function SinglePost(){
