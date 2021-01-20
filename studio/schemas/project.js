@@ -17,7 +17,35 @@ export default {
         },
         {
             name: "description",
-            type: "text",
+            type: "array",
+            of: [
+                {
+                    type: "string",
+                }
+            ]
+        },
+        {
+            name: "languages",
+            type: "array",
+            of: [
+                {
+                    type: "string",
+                }
+            ],
+            options: {
+                list: [
+                    {title: 'C++', value: 'C++'},
+                    {title: 'C', value: 'C'},
+                    {title: 'Java', value: 'Java'},
+                    {title: 'JavaScript', value: 'JavaScript'},
+                    {title: 'Python', value: 'Python'},
+                    {title: 'MATLAB', value: 'MATLAB'},
+                    {title: 'Ruby', value: 'Ruby'},
+                    {title: 'XML', value: 'XML'},
+                    {title: 'Assembly', value: 'Assemble'},
+                ]
+            },
+            validation: Rule => Rule.unique()
         },
         {
             name: "projectType",
@@ -26,13 +54,13 @@ export default {
             options: {
                 list: [
                     {
-                        value: "personal", title: "Personal" 
+                        value: "Personal", title: "Personal" 
                     },
                     {
-                        value: "client", title: "Client"
+                        value: "Client", title: "Client"
                     },
                     {
-                        value: "academic", title: "Academic"
+                        value: "Academic", title: "Academic"
                     },
                 ],
             },
@@ -54,4 +82,24 @@ export default {
             },
         },
     ],
+    orderings: [
+        {
+            title: "Project Date, New",
+            name: "dateDesc",
+            by: [
+                {
+                    field: 'date', direction: 'desc'
+                }
+            ]
+        },
+        {
+            title: "Project Date, Old",
+            name: "dateAsc",
+            by: [
+                {
+                    field: 'date', direction: 'asc'
+                }
+            ]
+        }
+    ]
 };

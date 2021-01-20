@@ -3,14 +3,14 @@ import React from "react";
 export default function Home() {
     return (
         <main>
-            <img src = ""
-            alt="Im ayush"
-            className="absoute object-cover w-full h-full"
-            />
-            <section className="relative flex justify-center min-h-screen pt-12 lg:pt-64 px-8">
-                <h1 className="text-6xl text-green-100 font-bold cursive leading-non lg:leading-snug home-name">
-                    Hey! I'm Ayush
-                </h1>
+            <section id ="home" class="section full-height absolute">
+                <div className="justify-end flex conatiner mx-auto pt-8 pr-8">
+                    <h2 className="font-serif text-3xl font-semibold text-white">
+                        Hi! I'm Ayush.
+                        <br/>
+                        I like to make things that make a difference.
+                    </h2>
+                </div>
             </section>
         </main>
     )
