@@ -17,6 +17,9 @@
     font-size:  100px;
 }
 
+.nav-bar{
+    background-color: #2C3E50;
+}
 .overlay {
     background-color: rgba(0, 0, 0, 0.4);
     height: 100%;
@@ -32,11 +35,14 @@
     background-position-y: top;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-image: url("IMG_2714.JPG");
+    background-image: url("img2.png");
     background-size: 100%;
     background-origin: padding-box;
     background-clip: border-box;
-    position: relative;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
 }
 
 .full-height {

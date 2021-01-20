@@ -23,9 +23,9 @@ export default function Project() {
     return (
         <main className="bg-gray-300 min-h-screen p-12">
             <section className="container mx-auto">
-                <section className="grid grid-cols-2 gap-8 grid-flow-row auto-rows-max">
+                <section className="grid grid-cols-2 gap-8 opacity-100">
                     {projectData && projectData.map((project, index) => (
-                    <article className="relative rounded-lg shadow-2xl bg-white p-16 hover:bg-gray-300">
+                    <article className="relative rounded-lg shadow-2xl bg-white p-16 opacity-80 hover:opacity-100">
                         <h3 className="text-yellow-800 text-3xl font-bold mb-2">
                             {project.title}
                         </h3>
