@@ -13,11 +13,11 @@ export default function NavBar() {
                     >
                         AYUSH BISHT
                     </NavLink>
-                    <NavLink to="/post" 
+                    {/* <NavLink to="/post" 
                         activeClassName="text-green-500"
                         className="inflex-flex items-center py-3 px-3 my-6 rounded text-white hover:text-green-500">
                         BLOG POSTS
-                    </NavLink>
+                    </NavLink> */}
                     <NavLink to="/project" 
                         activeClassName="text-green-500"
                         className="inflex-flex items-center py-3 px-3 my-6 rounded text-white hover:text-green-500">
