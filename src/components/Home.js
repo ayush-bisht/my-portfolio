@@ -13,7 +13,7 @@ export default function Home() {
                         <span className="text-red-500"> Ayush Bisht</span>
                         .
                         <br/>
-                        I'm just a software developer who wants
+                        I'm a software developer who wants
                         <br/>
                         to make things that make a difference.
                     </div>
