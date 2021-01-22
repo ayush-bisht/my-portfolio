@@ -32,6 +32,8 @@ export default function NavBar() {
                 <div className="inline-flex py-3 px-3 my-6">
                     <SocialIcon url="https://www.linkedin.com/in/ayush-bisht-b41130191/" className="mr-4 border-2 border-white border-solid rounded-full" 
                                 target="_blank" fgColor="#fff" bgColor="#2C3E50" style={{height:35, width:35}} />
+                    <SocialIcon url="https://github.com/ayush-bisht" className="mr-4 border-2 border-white border-solid rounded-full" 
+                                target="_blank" fgColor="#fff" bgColor="#2C3E50" style={{height:35, width:35}} />
                     <SocialIcon url="https://www.facebook.com/ayush.bisht.756/" className="mr-4  border-2 border-white border-solid rounded-full"
                                 target="_blank" fgColor="#fff" bgColor="#2C3E50" style={{height:35, width:35}} />
                     <SocialIcon url="https://www.instagram.com/ayush.bisht/" className="mr-4  border-2 border-white border-solid rounded-full" 
