@@ -15,7 +15,7 @@ export default function Home() {
                         <br/>
                         I'm a software developer who wants
                         <br/>
-                        to make things that make a difference.
+                        to build things that make a difference.
                     </div>
             </section>
             {/* <section id="home" className="section flex justify-center">
