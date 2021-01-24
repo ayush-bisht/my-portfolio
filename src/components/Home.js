@@ -2,7 +2,7 @@ import React from "react";
 import homeImage from "../img2.png"
 export default function Home() {
     return (
-        <main>
+        <main className="relative">
             <img 
                 src={homeImage}
                 alt='Nothing to show.'
