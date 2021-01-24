@@ -6,7 +6,7 @@ export default function NavBar() {
     return (
         <header className="nav-bar">
             <div className="container mx-auto flex justify-between">
-                <nav className="flex"> 
+                <nav className="flex flex-wrap"> 
                     <NavLink to="/" exact 
                         activeClassName="text-green-500"
                         className="inflex-flex items-center py-8 px-3 mr-4 text-white hover:text-green-500 text-2xl font-bold"

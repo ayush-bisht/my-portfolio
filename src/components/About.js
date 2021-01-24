@@ -20,7 +20,7 @@ export default function About() {
     if(!author) return <div>Loading...</div>;
 
     return (
-        <main>
+        <main className="relative">
             <img
                 src={background} 
                 alt="background here" className="absolute object-cover w-full h-full"/>

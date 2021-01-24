@@ -17,14 +17,17 @@ export default function Project() {
             projectType,
             link,
             tags
-        }`).then((data) => setProjectData(data))
+        }`).then((data) => {
+            data.sort((project1, project2) => (+new Date(project2.date) - +new Date(project1.date)));
+            setProjectData(data)
+            })
         .catch(console.error);
     }, []);
 
     return (
         <main className="bg-gray-300 min-h-screen p-12">
             <section className="container mx-auto">
-                <section className="grid grid-cols-2 gap-8 opacity-100">
+                <section className="grid grid-cols-1 md:grid-cols-2 gap-8 opacity-100">
                     {projectData && projectData.map((project, index) => (
                     <article key={project.id} className="relative rounded-lg shadow-2xl bg-white p-16 opacity-80 hover:opacity-100">
                         <h3 className="text-yellow-800 text-3xl font-bold mb-2">
