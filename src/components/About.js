@@ -28,7 +28,7 @@ export default function About() {
                 <section className="rounded-lg shadow-2xl justify-center lg:flex p-2 overflow-hidden">
                     {urlFor(author.authorImage).url() ?
                         <img src={urlFor(author.authorImage).url()}
-                            className="rounded w-36 h-36 lg:w-96 lg:h-96 mr-2"
+                            className="rounded w-36 h-36 md:w-76 md:h-76 lg:w-96 lg:h-96 mr-2"
                             alt={author.name}
                         /> :
                         <img src={authorPic}
