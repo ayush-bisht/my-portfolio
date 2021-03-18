@@ -32,7 +32,7 @@ export default function About() {
                             alt={author.name}
                         /> :
                         <img src={authorPic}
-                            className="rounded w-36 h-36 lg:w-96 lg:h-auto mr-2"
+                            className="rounded w-36 h-36 md:w-76 md:h-76 lg:w-96 lg:h-auto mr-2"
                             alt={author.name}
                         /> } 
                     <div className="text-lg flex flex-col justify-center pl-10 lg:pl-10 pr-10">
