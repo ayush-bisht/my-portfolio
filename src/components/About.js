@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from "react";
 import sanityClient from "../client.js";
 import BlockContent from "@sanity/block-content-to-react";
-import {urlFor} from "./SinglePost.js";
+// import {urlFor} from "./SinglePost.js";
 import background from "../background.png";
-import authorPic from "../aimg.jpg";
+// import authorPic from "../aimg.jpg";
 
 export default function About() {
     const [author, setAuthor] = useState(null);
