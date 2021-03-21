@@ -7,7 +7,7 @@ export default function Home() {
                 src={homeImage}
                 alt='Nothing to show.'
                 className="absolute object-cover w-full h-full" />
-            <section className="relative flex justify-center min-h-screen pt-80 lg:pt-80 px-8">
+            <section className="relative justify-center flex flex-wrap content-center min-h-screen">
                 <div className="font-serif font-semibold text-3xl z-1 text-white text-center">
                         Hi! I'm
                         <span className="text-red-500"> Ayush Bisht</span>

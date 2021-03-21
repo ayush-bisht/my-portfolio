@@ -24,9 +24,12 @@ export default function About() {
             <img
                 src={background} 
                 alt="background here" className="absolute object-cover w-full h-full"/>
-            <div className="p-20 lg:pt-48 container mx-auto relative">
-                <section className="rounded-lg shadow-2xl justify-center lg:flex p-2 overflow-hidden">
-                    {urlFor(author.authorImage).url() ?
+            
+            <section className="relative rounded-lg flex flex-wrap content-center justify-center min-h-screen">
+            {/* <div className="p-20 lg:pt-48 container mx-auto relative">
+                <section className="relative rounded-lg shadow-2xl justify-center lg:flex p-2 overflow-hidden">
+                     */}
+                    {/* {urlFor(author.authorImage).url() ?
                         <img src={urlFor(author.authorImage).url()}
                             className="rounded w-36 h-36 md:w-76 md:h-76 lg:w-96 lg:h-96 mr-2"
                             alt={author.name}
@@ -34,8 +37,10 @@ export default function About() {
                         <img src={authorPic}
                             className="rounded w-36 h-36 md:w-76 md:h-76 lg:w-96 lg:h-auto mr-2"
                             alt={author.name}
-                        /> } 
-                    <div className="text-lg flex flex-col justify-center pl-10 lg:pl-10 pr-10">
+                        /> }
+                          */}
+                    
+                    <div className="relative rounded-lg shadow-2xl text-lg flex flex-col justify-center p-10 lg:p-25 lg:border-2">
                         <h2 className="font-mono font-bold text-5xl text-green-600 mb-4">
                             {author.name}
                         </h2>
@@ -48,7 +53,6 @@ export default function About() {
                         </div>
                     </div>
                 </section>
-            </div>
         </main>
     )
 }
